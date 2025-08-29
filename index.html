@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pembelajaran Dasar Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Pembelajaran Dasar Pembuatan Website</h1>
+    <nav>
+      <button onclick="showSection('html')">HTML</button>
+      <button onclick="showSection('css')">CSS</button>
+      <button onclick="showSection('js')">JavaScript</button>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div id="html" class="card">
+      <h2>HTML (HyperText Markup Language)</h2>
+      <p>HTML adalah bahasa markup yang digunakan untuk membuat struktur dasar dari sebuah halaman website. Bisa dibilang HTML itu kerangka atau fondasi utama sebuah web.</p>
+      <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Hello World&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Halo Dunia!&lt;/h1&gt;
+    &lt;p&gt;Ini adalah paragraf.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+      </pre>
+    </div>
+
+    <div id="css" class="card" style="display:none;">
+      <h2>CSS (Cascading Style Sheets)</h2>
+      <p>CSS digunakan untuk mengatur tampilan website seperti warna, font, dan layout.</p>
+      <pre>
+body {
+  background-color: lightblue;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: navy;
+  text-align: center;
+}
+      </pre>
+    </div>
+
+    <div id="js" class="card" style="display:none;">
+      <h2>JavaScript</h2>
+      <p>JavaScript digunakan untuk menambahkan interaktivitas pada website.</p>
+      <pre>
+&lt;button onclick="alert('Halo!')"&gt;Klik Aku&lt;/button&gt;
+
+&lt;script&gt;
+  function halo() {
+    alert("Selamat datang di pembelajaran web!");
+  }
+  halo();
+&lt;/script&gt;
+      </pre>
+    </div>
+  </div>
+
+  <!-- Dark Mode Toggle -->
+  <button class="dark-toggle" onclick="toggleDark()">🌙</button>
+
+  <!-- Music Player -->
+  <audio id="myMusic" src="lagu.mp3"></audio>
+  <button class="music-toggle" onclick="toggleMusic()">🎵</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
